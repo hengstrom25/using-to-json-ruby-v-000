@@ -36,7 +36,6 @@ class PostsController < ApplicationController
     render json: post.to_json(only: [:title, :description, :id],
                               include: [ author: { only: [:name]}])
   end
-  end
 
   private
 
